@@ -144,13 +144,13 @@ export default function DrawingApp() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4 font-sans text-gray-800">
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-3xl font-bold mb-4 text-center"
-      >
-        🎨 Drawing Interface
-      </motion.h1>
+<motion.h1
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  style={{ display: 'block' }}  // Add this line
+>
+  <span className="text-3xl font-bold mb-4 text-center">🎨 Drawing Interface</span>
+</motion.h1>
       <div className="flex flex-col md:flex-row justify-center gap-4 mb-4">
         <div className="flex flex-wrap gap-2 items-center bg-white p-3 rounded-lg shadow">
           <span className="text-sm font-medium">Tools:</span>
